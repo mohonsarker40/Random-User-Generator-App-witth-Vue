@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id="app">
-        <img v-bind:src="picture" :alt="`${firstName} ${lastName}`">
+        <img v-bind:class="gender" v-bind:src="picture" :alt="`${firstName} ${lastName}`">
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>email: {{email}}</h3>
-        <button>Get Random User</button>
+        <button v-on:click="getUser()" v-bind:class="gender">Get Random User</button>
     </div>
 
 
